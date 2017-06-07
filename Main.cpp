@@ -1,6 +1,8 @@
 #include "MainHandler.h"
 
 //Create MainHandler object and call it run run the main execution of the program
+MainHandler Applet;
+Applet.launchMain();
 
 //literally nothing else
 
