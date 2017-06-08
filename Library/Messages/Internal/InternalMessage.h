@@ -2,6 +2,7 @@
 #define INTERNAL_MESSAGE_H
 
 #include <cstdint>
+#include <ctime>
 
 //Internal messages are primarily Strings with an ID
 //Prefixed by "INTERNAL"
@@ -10,7 +11,7 @@ namespace Messages {
     
     class InternalMessage {
         private:
-            int16_t msgID;
+            string msgID;
             string msgBody;
             string prefix = "_INTERNAL";
             bool failCase;
@@ -20,10 +21,12 @@ namespace Messages {
             InternalMessage();
             InternalMessage(string msg, bool passfail);
         
-            int16_t assignID();
+            string assignID();
             void send();
             void recieve();
             void sendToDebug();
+            
+            
             
     };
 }
