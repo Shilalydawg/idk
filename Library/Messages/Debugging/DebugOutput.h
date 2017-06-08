@@ -3,6 +3,7 @@
 
 //stdlib includes
 #include <string.h>
+#include <fstream>
 
 //Local Vars
 #include "../External/ExternalMessage.h"
@@ -11,7 +12,7 @@
 namespace Messages {
     class DebugOutput {
         private:
-            
+            string debugMsg;
             string errMessage;
             string errType;
             string errState;
